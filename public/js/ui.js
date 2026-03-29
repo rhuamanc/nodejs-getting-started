@@ -30,6 +30,7 @@ export const showVideoCallButtons = () => {
 export const updateRemoteVideo = (stream) => {
   const remoteVideo = document.getElementById("remote_video");
   remoteVideo.srcObject = stream;
+  remoteVideo.muted = false;
 };
 
 export const showIncomingCallDialog = (
